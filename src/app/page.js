@@ -113,7 +113,7 @@ export default function Home() {
         { (Object.keys(errors).length === 0 && submitting) ? (
             <div className='content'>
               <p>
-                <b>{inputFields.friend}</b> and I were going to he theatre, when we met <b>{inputFields.relative}</b>. <em>&quot;Hello, Sunny! Wtacha doin? <b>{inputFields.verb}</b>?&quot;, he said.</em> I didn&apos;t know what to do, so I said <b>{inputFields.adverb}</b> <em>&quot;Kick your butt, <b>{inputFields.animal}</b>!&quot;</em>.
+                <b>{inputFields.friend}</b> and I were going to he theatre, when we met <b>{inputFields.relative}</b>. <em>&quot;Hello, Sunny! Watcha doin? <b>{inputFields.verb}</b>?&quot;, he said.</em> I didn&apos;t know what to do, so I said <b>{inputFields.adverb}</b> <em>&quot;Kick your butt, <b>{inputFields.animal}</b>!&quot;</em>.
                 Then my <b>{inputFields.relation}</b> showed up, and in a loud voice said <em>&quot;<b>{inputFields.exclamation}</b>!&quot;</em> I <b>{inputFields.verb2}</b> to the nearest bus stop, and so did <b>{inputFields.friend}</b>. Now that was some crazy day!
               </p>
             </div>
