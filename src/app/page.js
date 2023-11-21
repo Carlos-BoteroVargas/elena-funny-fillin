@@ -1,6 +1,8 @@
 import Link from 'next/link';
-// import Image from 'next/image';
-// import Theatre from '/theatre1.png';
+import Image from 'next/image';
+import Theatre from '../../public/theatre1.png';
+import Stars from '../../public/star1.png';
+import Arcade from '../../public/arcade1.png';
 import './page.css';
 
 export default function Home() {
@@ -12,22 +14,43 @@ export default function Home() {
         <h1>Welcome to my page!</h1>
         <h3>Choose your story to play now:</h3>
           <div className='inputDiv'>
-            {/* <div>
+            <Link href='/theatre'>
               <Image 
-                src='/theatre1.png' 
+                src={Theatre} 
                 alt='The Theatre' 
                 height={250} 
                 width={241}
-                // placeholder='blur'
-              />
-            </div> */}
-            <Link href='/theatre'>Adventure in the Theatre</Link>
+              /> 
+              <div className='links'>
+                Adventure in the Theatre
+              </div>      
+            </Link>
           </div>
           <div className='inputDiv'>
-            <Link href='/stars'>Wishing upon a star</Link>
+            <Link href='/stars'>
+              <Image 
+                src={Stars} 
+                alt='Wishing upon a star' 
+                height={250} 
+                width={198}
+              /> 
+              <div className='links'>
+              Wishing upon a star
+              </div>      
+            </Link>
           </div>
           <div className='inputDiv'>
-            <Link href='/arcade'>Danger in the Arcade</Link>
+            <Link href='/arcade'>
+              <Image 
+                src={Arcade} 
+                alt='Danger in the Arcade' 
+                height={250} 
+                width={244}
+              /> 
+              <div className='links'>
+              Danger in the Arcade
+              </div>      
+            </Link>
           </div>
       </div>
     </div>
