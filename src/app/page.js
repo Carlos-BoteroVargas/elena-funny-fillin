@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Theatre from '../../public/theatre1.png';
 import Stars from '../../public/star1.png';
 import Arcade from '../../public/arcade1.png';
+import Mixup from '../../public/mixup1.png';
 import './page.css';
 
 export default function Home() {
@@ -13,6 +14,19 @@ export default function Home() {
       <div className='welcome'>
         <h1>Welcome to my page!</h1>
         <h3>Choose your story to play now:</h3>
+          <div className='inputDiv'>
+            <Link href='/mixup'>
+              <Image 
+                src={Mixup} 
+                alt='Magic Mix-up' 
+                height={250} 
+                width={268}
+              /> 
+              <div className='links'>
+                Magic Mix-up
+              </div>      
+            </Link>
+          </div>
           <div className='inputDiv'>
             <Link href='/theatre'>
               <Image 

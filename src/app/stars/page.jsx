@@ -120,18 +120,20 @@ export default function Stars() {
       ) 
   }
 
+  const plural = inputFields.animal + "s";
+
   return (
     
     <div className="App">
       <div className='cards'>
         { (Object.keys(errors).length === 0 && submitting) ? (
-            <div className='content'>
+            <div className='contentStar'>
               <p>
-              I was going to <b>{inputFields.place}</b>, when I saw a star. <em>“What?!“</em>, I said, <em>“That can&apos;t be a star!”</em>. I made a wish on the star, and a <b>{inputFields.animal}</b> started to talk: <em>“<b>{inputFields.exclamation}</b>, I can talk!”</em> But then it started to laugh <b>{inputFields.adverb}</b>. I ran away, but suddenly <b>{inputFields.largeNumber} {inputFields.animal}s</b> started to follow me. My <b>{inputFields.noun}</b> was <b>{inputFields.smallNumber} {inputFields.measure}</b> away, so I <b>{inputFields.verb}</b> to it, grabbed the <b>{inputFields.poison}</b> and put it all over the <b>{inputFields.noun2}</b>. When they tried to attack, the army <b>{inputFields.verb2}</b> in. I AM SAVED!!
+              I was going to <b>{inputFields.place}</b>, when I saw a star. <em>“What?!“</em>, I said, <em>“That can&apos;t be a star!”</em>. I made a wish on the star, and a <b>{inputFields.animal}</b> started to talk: <em>“<b>{inputFields.exclamation}</b>, I can talk!”</em> But then it started to laugh <b>{inputFields.adverb}</b>. I ran away, but suddenly <b>{inputFields.largeNumber} {plural}</b> started to follow me. My <b>{inputFields.noun}</b> was <b>{inputFields.smallNumber} {inputFields.measure}</b> away, so I <b>{inputFields.verb}</b> to it, grabbed the <b>{inputFields.poison}</b> and put it all over the <b>{inputFields.noun2}</b>. When they tried to attack, the army <b>{inputFields.verb2}</b> in. I AM SAVED!!
               </p>
             </div>
             ) : (
-              <div className='inputs'>
+              <div className='inputsStar'>
                 <p>
                   To read this story, fill in the blanks.
                 </p>

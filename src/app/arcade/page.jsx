@@ -84,17 +84,18 @@ export default function Arcade() {
       setSubmitting(false)
       setGoBack(false)
       setInputFields({
-        place: null,
-        noun: null,
-        noun2: null,
+        relative: null,
+        celebrity: null,
+        bodyPart: null,
         verb: null,
         verb2: null,
-        adverb: null,
+        spookyThing: null,
         animal: null,
-        exclamation: null,
-        poison: null,
+        badGuy: null,
+        verb3: null,
         largeNumber: null,
-        smallNumber: null,
+        verb4: null,
+        verb5: null,
       });
     }
   };
@@ -126,7 +127,7 @@ export default function Arcade() {
     <div className="App">
       <div className='cards'>
         { (Object.keys(errors).length === 0 && submitting) ? (
-            <div className='content'>
+            <div className='contentArcade'>
               <p>
                 The Arcade is so fun. That is where <b>{inputFields.relative}</b> and I were going. The host, <b>{inputFields.celebrity}</b>, asked me: <em>“Would you like to come with me? It would be very <b>{inputFields.verb}</b>.”</em> I decided to go along, so I got in their car which started to go at <b>{inputFields.largeNumber}</b> miles per hour. We drove right into the <b>{inputFields.spookyThing}</b> tunnel. 
 
@@ -134,7 +135,7 @@ export default function Arcade() {
               </p>
             </div>
             ) : (
-              <div className='inputs'>
+              <div className='inputsArcade'>
                 <p>
                   To read the Arcade story, <br />fill in the blanks.
                 </p>
@@ -166,7 +167,7 @@ export default function Arcade() {
                   <input className='input' size="30" name='verb2' type='text' value={inputFields.verb2} onChange={handleChange}/>
                 </div>
 
-                <div className={errors.verb5 ? "error" : ""}>another past tense verb: {errors.verb5 ? <em className='error'>*required</em> : null}<br />
+                <div className={errors.verb5 ? "error" : ""}>Verb: {errors.verb5 ? <em className='error'>*required</em> : null}<br />
                   <input className='input' size="30" name='verb5' type='text' value={inputFields.verb5} onChange={handleChange}/>
                 </div>
 

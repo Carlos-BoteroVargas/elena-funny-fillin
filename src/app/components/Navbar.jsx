@@ -19,7 +19,7 @@ export default function Navbar() {
         { (pathname === "/") ? "" : (
             <div className='back'>
               <button className='backButton'>
-                <Link href='/'>🡸<br />BACK</Link>
+                <Link href='/'>&#x2B05;<br />BACK</Link>
               </button>
             </div>
           )

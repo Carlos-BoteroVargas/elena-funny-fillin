@@ -122,7 +122,7 @@ input[text]::after {
   border: none;
   background-color: #FFAA00;
   color: #010101;
-  font-size: 0.9rem;
+  font-size: 0.9I drem;
   font-weight: bold;
   cursor: pointer;
   z-index: 999;

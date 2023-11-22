@@ -17,7 +17,7 @@
   border-radius: 10px;
 }
 
-.inputs {
+.inputsTheatre {
   background-color: rgb(94, 124, 200);
   padding: 2vh;
   margin-top: 1vh;
@@ -39,7 +39,7 @@ input[text]::after {
   padding-bottom: 5px
 }
 
-.content {
+.contentTheatre {
   background-color: #eee0e0;
   padding: 2vh;
   max-width: 45vh;

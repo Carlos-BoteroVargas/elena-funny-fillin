@@ -68,17 +68,14 @@ export default function Theatre() {
       setSubmitting(false)
       setGoBack(false)
       setInputFields({
-        place: null,
-        noun: null,
-        noun2: null,
+        friend: null,
+        relative: null,
+        relation: null,
         verb: null,
         verb2: null,
         adverb: null,
         animal: null,
         exclamation: null,
-        poison: null,
-        largeNumber: null,
-        smallNumber: null,
       });
     }
   };
@@ -109,14 +106,14 @@ export default function Theatre() {
     <div className="App">
       <div className='cards'>
         { (Object.keys(errors).length === 0 && submitting) ? (
-            <div className='content'>
+            <div className='contentTheatre'>
               <p>
                 <b>{inputFields.friend}</b> and I were going to he theatre, when we met <b>{inputFields.relative}</b>. <em>&quot;Hello, Sunny! Watcha doin? <b>{inputFields.verb}</b>?&quot;, he said.</em> I didn&apos;t know what to do, so I said <b>{inputFields.adverb}</b> <em>&quot;Kick your butt, <b>{inputFields.animal}</b>!&quot;</em>.
                 Then my <b>{inputFields.relation}</b> showed up, and in a loud voice said <em>&quot;<b>{inputFields.exclamation}</b>!&quot;</em> I <b>{inputFields.verb2}</b> to the nearest bus stop, and so did <b>{inputFields.friend}</b>. Now that was some crazy day!
               </p>
             </div>
             ) : (
-              <div className='inputs'>
+              <div className='inputsTheatre'>
                 <p>
                   To want to read the Theatre story, <br /> fill in the blanks:
                 </p>
