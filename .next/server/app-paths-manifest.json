@@ -1,9 +1,10 @@
 {
   "/_not-found": "app/_not-found.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/arcade/page": "app/arcade/page.js",
+  "/mixup/page": "app/mixup/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/museum/page": "app/museum/page.js",
   "/page": "app/page.js",
   "/stars/page": "app/stars/page.js",
-  "/mixup/page": "app/mixup/page.js",
   "/theatre/page": "app/theatre/page.js"
 }
