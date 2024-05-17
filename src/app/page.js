@@ -19,7 +19,7 @@ export default function Home() {
             <Link href='/museum'>
               <Image 
                 src={Museum} 
-                alt='Magic Mix-up' 
+                alt='Museum mischief' 
                 height={250} 
                 width={268}
               /> 
@@ -28,7 +28,7 @@ export default function Home() {
               </div>      
             </Link>
           </div>
-          <div>
+          <div className='inputDiv'>
             <Link href='/mixup'>
               <Image 
                 src={Mixup} 
